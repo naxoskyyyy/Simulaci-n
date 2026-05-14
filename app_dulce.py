@@ -6,7 +6,7 @@ import json
 import io
 
 # 1. Configuración visual de la página web (Debe ser el primer comando de Streamlit)
-st.set_page_config(page_title="Dulce Mamá - Herramientas", page_icon="🍰", layout="centered")
+st.set_page_config(page_title="Cotizador", layout="centered")
 
 # 2. Configuración de la API (Preparado para la Nube y Local)
 try:
@@ -18,7 +18,7 @@ except FileNotFoundError:
 
 client = genai.Client(api_key=API_KEY)
 
-st.title("🍰 Sistema Administrativo Dulce Mamá")
+st.title("Sistema Calculo Cotización")
 st.subheader("Generador de Fichas Técnicas y Costos")
 
 # 3. El "Cerebro" de la IA
